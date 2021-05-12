@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.manageCat">
+    <children>
+        <Button fx:id="createCat" layoutX="328.0" layoutY="63.0" mnemonicParsing="false" onAction="#createCat" prefHeight="46.0" prefWidth="241.0" text="Create Category" AnchorPane.leftAnchor="328.0" AnchorPane.rightAnchor="31.0" />
+        <Button fx:id="remCat" layoutX="328.0" layoutY="131.0" mnemonicParsing="false" onAction="#remCat" prefHeight="46.0" prefWidth="241.0" text="Remove category" />
+      <Button fx:id="createSubCat" layoutX="328.0" layoutY="195.0" mnemonicParsing="false" onAction="#createSubCat" prefHeight="46.0" prefWidth="241.0" text="Create subCategory" />
+      <Button fx:id="removeSubCat" layoutX="328.0" layoutY="265.0" mnemonicParsing="false" onAction="#removeSubCat" prefHeight="46.0" prefWidth="241.0" text="Remove subCategory" />
+      <Button fx:id="enterCat" layoutX="328.0" layoutY="333.0" mnemonicParsing="false" onAction="#enterCat" prefHeight="46.0" prefWidth="241.0" text="Enter the category" />
+      <MenuBar layoutY="2.0" prefHeight="37.0" prefWidth="601.0">
+        <menus>
+          <Menu mnemonicParsing="false">
+               <graphic>
+                  <Button fx:id="backBtn" mnemonicParsing="false" onAction="#goBack" text="Back" />
+               </graphic>
+          </Menu>
+          <Menu mnemonicParsing="false" text="listCats">
+               <items>
+                  <MenuItem fx:id="listCat" mnemonicParsing="false" onAction="#createTree" onMenuValidation="#handleButtonAction" text="Listcat" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="EditCat">
+            <items>
+              <MenuItem fx:id="editCat" mnemonicParsing="false" onAction="#editCat" onMenuValidation="#editCat" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="infoCat">
+              <items>
+                <MenuItem fx:id="informationCat" mnemonicParsing="false" onAction="#infoCat" onMenuValidation="#infoCat" text="getInfo" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TreeView fx:id="selectionTreeView" layoutX="14.0" layoutY="37.0" prefHeight="348.0" prefWidth="285.0" />
+    </children>
+</AnchorPane>

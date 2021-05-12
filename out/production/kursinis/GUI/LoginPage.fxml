@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LoginPage">
+   <children>
+      <SplitPane dividerPositions="0.48135593220338985" layoutX="6.0" layoutY="4.0" prefHeight="393.0" prefWidth="592.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="signUpBtn" layoutX="134.0" layoutY="226.0" mnemonicParsing="false" onAction="#createUser" prefHeight="40.0" prefWidth="91.0" text="Sign up" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="signInBtn" layoutX="152.0" layoutY="227.0" mnemonicParsing="false" onAction="#validateUser" prefHeight="40.0" prefWidth="85.0" text="Sign in" />
+                  <Label layoutX="45.0" layoutY="52.0" prefHeight="28.0" prefWidth="98.0" text="login" />
+                  <TextField fx:id="loginField" layoutX="45.0" layoutY="80.0" prefHeight="25.0" prefWidth="225.0" />
+                  <Label layoutX="45.0" layoutY="117.0" text="password" />
+                  <PasswordField fx:id="pswField" layoutX="45.0" layoutY="147.0" prefHeight="25.0" prefWidth="225.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseSettingsState">
+    <option name="database" value="kursinis_1" />
+    <option name="url" value="jdbc:mysql://localhost:3306/kursinis_1" />
+  </component>
+</project>

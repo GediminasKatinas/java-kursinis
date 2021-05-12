@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainMenu">
+    <children>
+        <HBox layoutX="11.0" layoutY="39.0" prefHeight="349.0" prefWidth="575.0">
+            <children>
+                <AnchorPane prefHeight="349.0" prefWidth="578.0">
+                    <children>
+                        <Button fx:id="ManageData" layoutX="217.0" layoutY="31.0" mnemonicParsing="false" onAction="#loadDataManagement" prefHeight="46.0" prefWidth="141.0" text="Manage Data" />
+                        <Button fx:id="manageCat" layoutX="217.0" layoutY="101.0" mnemonicParsing="false" onAction="#manageCat" prefHeight="53.0" prefWidth="141.0" text="Manage categories" />
+                        <Button fx:id="adminMeniu" layoutX="217.0" layoutY="175.0" mnemonicParsing="false" onAction="#enterAdmin" prefHeight="46.0" prefWidth="141.0" text="Enter AdminMeniu" />
+                  <Button fx:id="exitBtn" layoutX="217.0" layoutY="237.0" mnemonicParsing="false" onAction="#exitProgram" prefHeight="46.0" prefWidth="141.0" text="Exit" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+        <MenuBar prefHeight="25.0" prefWidth="600.0" />
+    </children>
+</AnchorPane>
